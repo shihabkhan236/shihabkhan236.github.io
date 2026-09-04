@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of John Doe - CSE Undergraduate at IUT. Exploring Software Engineering, Systems, and Game Development." />
+  <meta name="keywords" content="Portfolio, Computer Science, IUT, Software Engineer, C++, Java, Developer" />
+  <meta name="author" content="John Doe" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="John Doe | CSE Portfolio" />
+  <meta property="og:description" content="CSE Undergraduate @ IUT. Software engineering, algorithms, and project showcase." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar-placeholder.svg" />
+  
+  <title>John Doe | CSE Portfolio</title>
+  
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Dynamic Canvas Background (Subtle Starfield / Cosmic Dust) -->
+  <canvas id="starfield-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Top Pill Navigation -->
+  <header class="nav-wrapper">
+    <nav class="pill-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme" title="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero (Home) -->
+    <section id="home" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <div class="eyebrow-pill">
+            <span class="pulse-dot"></span>
+            CSE UNDERGRADUATE
+          </div>
+          <!-- REPLACE PLACEHOLDER NAME HERE -->
+          <h1 class="hero-title">
+            Shihab <span class="accent-text">Khan</span>
+          </h1>
+          <p class="hero-subtitle">CSE Undergrad @ Islamic University of Technology (IUT)</p>
+          <p class="hero-desc">
+            Passionate about building robust software, exploring systems architecture, algorithms, and interactive game development with C/C++ and Java.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="social-row" aria-label="Social links">
+            <a href="mailto:shihabkhan@example.com" class="social-link" title="Email" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="https://github.com/shihabkhan236" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="tel:+8801700000000" class="social-link" title="Phone" aria-label="Phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card hero-profile-card">
+            <div class="avatar-wrapper">
+              <img src="assets/avatar-placeholder.svg" alt="Profile avatar" class="hero-avatar" />
+              <div class="avatar-glow"></div>
+            </div>
+            
+            <div class="highlights-box">
+              <h3 class="highlights-label">QUICK HIGHLIGHTS</h3>
+              <ul class="highlights-list">
+                <li>Focused on clean architecture & scalable backend logic</li>
+                <li>Active competitive programming & algorithmic problem solving</li>
+                <li>Building terminal utilities, desktop tools & 2D adventure games</li>
+              </ul>
+            </div>
+
+            <div class="card-divider"></div>
+
+            <div class="stat-chips-grid">
+              <div class="stat-chip">
+                <span class="stat-value">4+</span>
+                <span class="stat-name">MAJOR PROJECTS</span>
+              </div>
+              <div class="stat-chip">
+                <span class="stat-value">CSE</span>
+                <span class="stat-name">CORE FOCUS</span>
+              </div>
+              <div class="stat-chip">
+                <span class="stat-value">Sem 4</span>
+                <span class="stat-name">CURRENT LEVEL</span>
+              </div>
+              <div class="stat-chip">
+                <span class="stat-value">IUT</span>
+                <span class="stat-name">CAMPUS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About <span class="accent-text">Me</span></h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-card">
+            <span class="card-tag">PROFILE</span>
+            <h3 class="about-name">Shihab Khan</h3>
+            <p class="about-role">CSE Undergrad & Software Enthusiast</p>
+            <p class="about-bio">
+              Driven Computer Science student at Islamic University of Technology with a strong passion for solving intricate software problems. Dedicated to mastering object-oriented paradigms, data structures, and creating high-performance interactive software.
+            </p>
+            <div class="status-pills">
+              <span class="pill-badge"><span class="badge-dot"></span> Dhaka, Bangladesh</span>
+              <span class="pill-badge active-pill"><span class="badge-dot green-dot"></span> Open to Collaboration</span>
+            </div>
+          </div>
+
+          <div class="card about-card">
+            <span class="card-tag">SPECIALIZATION</span>
+            <h3 class="about-name">Technical Focus</h3>
+            <p class="about-bio">
+              Specializing in robust desktop and CLI system development, Object-Oriented software engineering with Java & C++, and hands-on game mechanics using LibGDX.
+            </p>
+            <div class="tech-tags-wrap">
+              <span class="tag-pill">Algorithms & DS</span>
+              <span class="tag-pill">Java / JavaFX Development</span>
+              <span class="tag-pill">Competitive Programming</span>
+              <span class="tag-pill">C / C++ Systems</span>
+              <span class="tag-pill">LibGDX 2D Engine</span>
+              <span class="tag-pill">Database Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Education -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">My <span class="accent-text">Education</span></h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">B.Sc. in Computer Science and Engineering</h3>
+                  <p class="timeline-institution">Islamic University of Technology (IUT)</p>
+                </div>
+                <span class="pill-badge status-ongoing">Pursuing — Semester 4</span>
+              </div>
+              <p class="timeline-desc">
+                Engaged in foundational computer science coursework, including Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, and Discrete Mathematics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Higher Secondary Certificate (HSC)</h3>
+                  <p class="timeline-institution">Science Group</p>
+                </div>
+                <span class="pill-badge status-completed">Completed — 2023</span>
+              </div>
+              <p class="timeline-desc">
+                Achieved exemplary grades in Physics, Chemistry, Higher Mathematics, and ICT.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                  <p class="timeline-institution">Science Group</p>
+                </div>
+                <span class="pill-badge status-completed">Completed — 2021</span>
+              </div>
+              <p class="timeline-desc">
+                Built foundational background in analytical problem solving and scientific reasoning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Skills -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical <span class="accent-text">Skills</span></h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Column 1: Languages -->
+          <div class="card skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Languages</h3>
+            <div class="skill-pills-wrap">
+              <span class="tag-pill">C</span>
+              <span class="tag-pill">C++</span>
+              <span class="tag-pill">Java</span>
+              <span class="tag-pill">PostgreSQL</span>
+              <span class="tag-pill">SQL</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Frameworks & Tools -->
+          <div class="card skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Frameworks & Tools</h3>
+            <div class="skill-pills-wrap">
+              <span class="tag-pill">JavaFX</span>
+              <span class="tag-pill">LibGDX</span>
+              <span class="tag-pill">JDBC</span>
+              <span class="tag-pill">Gradle</span>
+              <span class="tag-pill">Tiled Map Editor</span>
+              <span class="tag-pill">Git & GitHub</span>
+              <span class="tag-pill">Eclipse / IntelliJ</span>
+            </div>
+          </div>
+
+          <!-- Column 3: Core Concepts -->
+          <div class="card skill-card">
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <h3 class="skill-card-title">Core Concepts</h3>
+            <div class="skill-pills-wrap">
+              <span class="tag-pill">Algorithms & Data Structures</span>
+              <span class="tag-pill">Object-Oriented Programming (OOP)</span>
+              <span class="tag-pill">Relational Database Design</span>
+              <span class="tag-pill">Modular CLI Architecture</span>
+              <span class="tag-pill">Game Loops & Collision Logic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Projects -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured <span class="accent-text">Projects</span></h2>
+          <div class="section-underline"></div>
+          <p class="section-subtitle">Click the project circle to view architecture highlights and details</p>
+        </div>
+
+        <div class="carousel-container">
+          <!-- Previous Button -->
+          <button id="carousel-prev" class="carousel-control-btn" aria-label="Previous project" title="Previous Project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Circular Project Card Wrapper -->
+          <div class="circular-card-wrapper" id="project-card-trigger" role="button" tabindex="0" aria-label="Open project details modal">
+            <div class="circular-project-card" id="project-circle">
+              <div class="circle-cover-bg" id="project-cover-bg"></div>
+              <div class="circle-overlay">
+                <span class="view-details-hint">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                  Click for details
+                </span>
+              </div>
+            </div>
+            
+            <div class="project-info-below">
+              <h3 class="current-project-name" id="project-name-display">Project Name</h3>
+              <div id="project-status-container">
+                <!-- Status pill dynamically injected -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Next Button -->
+          <button id="carousel-next" class="carousel-control-btn" aria-label="Next project" title="Next Project">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Carousel Indicators / Dots -->
+        <div class="carousel-dots" id="carousel-dots-container" role="tablist" aria-label="Project navigation dots">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Project Detail Modal (Circular Design) -->
+    <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+      <div class="modal-circular-content">
+        <button id="modal-close-btn" class="modal-close" aria-label="Close modal" title="Close">&times;</button>
+        
+        <div class="modal-inner-scroll">
+          <div id="modal-status-badge"></div>
+          <h2 id="modal-project-title" class="modal-title">Project Title</h2>
+          
+          <div id="modal-tags" class="modal-tags-row"></div>
+          
+          <p id="modal-description" class="modal-desc"></p>
+          
+          <div class="modal-highlights-container">
+            <h4 class="modal-highlights-title">KEY HIGHLIGHTS</h4>
+            <ul id="modal-highlights-list" class="modal-highlights-list"></ul>
+          </div>
+
+          <div class="modal-actions">
+            <a id="modal-repo-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-repo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              View Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 7: Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+          <div class="section-underline"></div>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <div class="card contact-card">
+            <p class="contact-prompt">
+              I am always open to discussing new projects, software engineering challenges, or internship opportunities. Feel free to reach out!
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:shihabkhan@example.com" class="contact-row">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">Email</span>
+                  <span class="contact-val">shihabkhan@example.com</span>
+                </div>
+                <span class="contact-arrow">&rarr;</span>
+              </a>
+
+              <a href="https://github.com/shihabkhan236" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">GitHub</span>
+                  <span class="contact-val">github.com/shihabkhan236</span>
+                </div>
+                <span class="contact-arrow">&rarr;</span>
+              </a>
+
+              <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer" class="contact-row">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">LinkedIn</span>
+                  <span class="contact-val">linkedin.com/in/placeholder</span>
+                </div>
+                <span class="contact-arrow">&rarr;</span>
+              </a>
+
+              <a href="tel:+8801700000000" class="contact-row">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">Phone</span>
+                  <span class="contact-val">+880 1700-000000</span>
+                </div>
+                <span class="contact-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="copyright-text">&copy; 2026 Shihab Khan. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:shihabkhan@example.com" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://github.com/shihabkhan236" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
