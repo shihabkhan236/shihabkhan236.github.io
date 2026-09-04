@@ -49,7 +49,7 @@ const projects = [
   },
   {
     name: "2D Parkour Game",
-    status: "Completed",
+    status: "Ongoing",
     tags: ["Godot", "GDScript", "2D Platformer", "Game Jam", "Mechanics"],
     description: "A fast-paced 2D platformer built with the Godot engine for a game jam, centered around responsive parkour movement and fluid platforming mechanics.",
     highlights: [
