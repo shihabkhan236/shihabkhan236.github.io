@@ -35,6 +35,19 @@ const projects = [
     image: "assets/deadline-dash-cover.png"
   },
   {
+    name: "Discretia",
+    status: "Completed",
+    tags: ["C", "Raylib", "Algorithms", "OOP in C", "Simulation"],
+    description: "An educational 2D platformer and algorithm simulator built with C and Raylib that visualizes sorting algorithms through interactive parkour mechanics.",
+    highlights: [
+      "Simulates Bubble Sort, Merge Sort, Insertion Sort, and Selection Sort through physics-based platforming gameplay.",
+      "Engineered Object-Oriented architecture natively in pure C for modular game states and entity manipulation.",
+      "Interactive mechanics where the player controls a block entity to move and sort numerical values between containers."
+    ],
+    repo: "https://github.com/shihabkhan236/Discretia",
+    image: "assets/discretia-cover.png"
+  },
+  {
     name: "2D Parkour Game",
     status: "Completed",
     tags: ["Godot", "GDScript", "2D Platformer", "Game Jam", "Mechanics"],
