@@ -33,6 +33,19 @@ const projects = [
     ],
     repo: "https://github.com/Shaquibbai/Deadline-Dash",
     image: "assets/deadline-dash-cover.png"
+  },
+  {
+    name: "2D Parkour Game",
+    status: "Completed",
+    tags: ["Godot", "GDScript", "2D Platformer", "Game Jam", "Mechanics"],
+    description: "A fast-paced 2D platformer built with the Godot engine for a game jam, centered around responsive parkour movement and fluid platforming mechanics.",
+    highlights: [
+      "Developed using the Godot game engine with responsive physics and platforming controls.",
+      "Engineered rich movement mechanics including double jumps, dashes, and obstacle traversal.",
+      "Built for the ICT Game Jam with custom level layouts and interactive challenges."
+    ],
+    repo: "https://github.com/Pafez/ict-game-jam",
+    image: "assets/project-4-cover.png"
   }
 ];
 
